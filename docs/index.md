@@ -6,4 +6,4 @@ tags:
 ---
 
 ## emwall527.github.io
-Hello Welcome to my page
+*fuck you*
