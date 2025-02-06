@@ -6,4 +6,4 @@ tags:
 ---
 
 ## emwall527.github.io
-*fuck you*
+How do I commit this stuff man
