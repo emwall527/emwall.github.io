@@ -8,3 +8,5 @@ tags:
 Hello Welcome to my page! My work will be updated periodically as I complete it below.
 
 ## Individual Assignments
+
+![Block Diagram](Block_Diagram.jpg)
