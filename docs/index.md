@@ -1,10 +1,10 @@
 ---
-title: Welcome
+title: Embedded Systems Design Project II
 tags:
 - tag1
 - tag2
 ---
 
-## emwall527.github.io
-How do I commit this stuff man
-I CAN"T GET MY PAGE TO SHOW MY CHANGES!!!!!!!!!!!
+Hello Welcome to my page! My work will be updated periodically as I complete it below.
+
+## Individual Assignments
