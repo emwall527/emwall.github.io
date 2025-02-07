@@ -9,4 +9,4 @@ Hello Welcome to my page! My work will be updated periodically as I complete it 
 
 ## Individual Assignments
 
-![Block Diagram](Block_Diagram.jpg)
+![Block Diagram](downloads/Block_Diagram.jpg)
