@@ -9,4 +9,4 @@ Hello Welcome to my page! My work will be updated periodically as I complete it 
 
 ## Individual Assignments
 
-![Block Diagram](C:\Users\walle\Downloads\Block Diagram.jpg)
+![Block Diagram](Pictures/Block Diagram.jpg)
