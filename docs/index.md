@@ -9,4 +9,4 @@ Hello Welcome to my page! My work will be updated periodically as I complete it 
 
 ## Individual Assignments
 
-![Block Diagram](Pictures/Block Diagram.jpg)
+![Block Diagram](https://raw.githubusercontent.com/emwall527/emwall.github.io/refs/heads/main/Pictures/Block%20Diagram.jpg)
