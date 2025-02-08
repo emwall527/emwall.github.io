@@ -498,23 +498,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#item-1" class="md-nav__link">
-    Item 1
+  <a href="#subsystem-functionality" class="md-nav__link">
+    Subsystem Functionality
+  </a>
+  
+    <nav class="md-nav" aria-label="Subsystem Functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microcontroller-selection" class="md-nav__link">
+    Microcontroller Selection
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#item-2" class="md-nav__link">
-    Item 2
+        
+          <li class="md-nav__item">
+  <a href="#pitot-tube-sensor" class="md-nav__link">
+    Pitot Tube Sensor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#item-3" class="md-nav__link">
-    Item 3
+        
+          <li class="md-nav__item">
+  <a href="#oled" class="md-nav__link">
+    OLED
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -713,23 +726,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#item-1" class="md-nav__link">
-    Item 1
+  <a href="#subsystem-functionality" class="md-nav__link">
+    Subsystem Functionality
+  </a>
+  
+    <nav class="md-nav" aria-label="Subsystem Functionality">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microcontroller-selection" class="md-nav__link">
+    Microcontroller Selection
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#item-2" class="md-nav__link">
-    Item 2
+        
+          <li class="md-nav__item">
+  <a href="#pitot-tube-sensor" class="md-nav__link">
+    Pitot Tube Sensor
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#item-3" class="md-nav__link">
-    Item 3
+        
+          <li class="md-nav__item">
+  <a href="#oled" class="md-nav__link">
+    OLED
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -757,7 +783,10 @@
 
 
 <h1 id="component-selection">Component Selection</h1>
-<h3 id="item-1">Item 1</h3>
+<p>This page documents my component selection process, including the options considered for each major subsystem and the reasoning behind my choices for supporting hardware. Due to project requirements, only surface-mount components will be considered.</p>
+<h2 id="subsystem-functionality">Subsystem Functionality</h2>
+<p>My role in our team's simulated wind tunnel project is to manage the airspeed display. The system includes a small airplane on a pivot with streamers to visualize airflow, along with a 7-segment display that indicates wind speed. The wind speed values are controlled by an operator using dials. To ensure seamless communication between subsystems, our team has chosen to use UART, forwarding messages with headers to identify their sources. Since response time is not critical, this approach should work as long as each microcontroller has enough data storage to queue and transmit the necessary information.</p>
+<h3 id="microcontroller-selection">Microcontroller Selection</h3>
 <table>
 <thead>
 <tr>
@@ -768,18 +797,23 @@
 </thead>
 <tbody>
 <tr>
-<td>Component 1</td>
+<td>PIC18F47Q10 TQFP/44</td>
+<td><em>Benfit 1 <br> </em>Benefit 2 <br> *Benefit 3</td>
+<td><em>Drawback <br> </em>Drawback <br> *Drawback</td>
+</tr>
+<tr>
+<td>Component 2</td>
 <td>filler</td>
 <td>filler</td>
 </tr>
 <tr>
-<td>Component 2</td>
+<td>Component 3</td>
 <td>filler</td>
 <td>filler</td>
 </tr>
 </tbody>
 </table>
-<h3 id="item-2">Item 2</h3>
+<h3 id="pitot-tube-sensor">Pitot Tube Sensor</h3>
 <table>
 <thead>
 <tr>
@@ -796,12 +830,17 @@
 </tr>
 <tr>
 <td>Component 2</td>
+<td>filler</td>
+<td>filler</td>
+</tr>
+<tr>
+<td>Component 3</td>
 <td>filler</td>
 <td>filler</td>
 </tr>
 </tbody>
 </table>
-<h3 id="item-3">Item 3</h3>
+<h3 id="oled">OLED</h3>
 <table>
 <thead>
 <tr>
@@ -818,6 +857,11 @@
 </tr>
 <tr>
 <td>Component 2</td>
+<td>filler</td>
+<td>filler</td>
+</tr>
+<tr>
+<td>Component 3</td>
 <td>filler</td>
 <td>filler</td>
 </tr>
