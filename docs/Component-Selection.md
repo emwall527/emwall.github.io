@@ -8,9 +8,9 @@ My role in our team's simulated wind tunnel project is to manage the airspeed di
 ### Microcontroller Selection
 Solution    | Image | Pros   | Cons  | Datasheet
 ------------|-------|--------|-------|----------
-PIC18F47Q10 TQFP/44 | [Image] |- Benefit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 2
-Component 2 | [Image] | - Benfit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 3
-Component 3 | [Image] | - Benfit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 3
+PIC18F47Q10 TQFP/44 | [Image] |- Benefit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 2 | [Datasheet]
+Component 2 | [Image] | - Benfit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 3 | [Datasheet]
+Component 3 | [Image] | - Benfit 1 <br> - Benefit 2 <br> - Benefit 3 | - Drawback 1 <br> - Drawback 2 <br> - Drawback 3 | [Datasheet]
 
 ### Pitot Tube Sensor
 Solution    | Image | Pros   | Cons  | Datasheet
