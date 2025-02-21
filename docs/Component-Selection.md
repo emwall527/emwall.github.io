@@ -5,7 +5,7 @@ This page documents my component selection process, including the options consid
 ## Subsystem Functionality
 My role in our team's simulated wind tunnel project is to manage the airspeed display. The system includes a small airplane on a pivot with streamers to visualize airflow, along with a 7-segment display that indicates wind speed. The wind speed values are controlled by an operator using dials. To ensure seamless communication between subsystems, our team has chosen to use UART, forwarding messages with headers to identify their sources. Since response time is not critical, this approach should work as long as each microcontroller has enough data storage to queue and transmit the necessary information.
 
-### Microcontroller Selection
+### Microcontroller Selection (Edited:2/7/2025)
 Solution    | Image | Pros   | Cons  | Datasheet
 ------------|-------|--------|-------|----------
 __PIC18F47Q10 TQFP/44__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4564/150%7EC04-076%7EPT%7E44.JPG) |- High Memory <br> - Rich Peripherals <br> - Hardware CLC | - Higher Power Consumption <br> - More Expensive <br> - More Complex to Program | [Datasheet](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786)
@@ -14,7 +14,7 @@ ATTINY202-SSFR | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias
 
 __Selection:__ I chose the PIC18F47Q10 (TQFP/44) for my airspeed display because its successful integration with other systems will largely determine the projects scope. The availability of both provided and sourced information will be crucial to the final system's functionality. Additionaly, using the same microcontroller as other students provides access to broader knowledge base, and the labs leading up to the final project will help refine my skills with this specific controller.
 
-### Anemometer
+### Anemometer (Edited:2/20/2025)
 
 __Explanation__: Our team plans to build a custom anemometer for our project, designed to measure the speed of the fan in our wind tunnel. The component selection will include a motor which is needed for the anemometer, because we want the motor to be spinning from our provided wind speed so we can read the input and convert the motor readings to wind speed as the output.
 
@@ -26,7 +26,7 @@ FIT0564 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images
 
 __Selection__: The Vybronics VQ4TL2BQ380001 motor was chosen because of its high RPM (24,927 RPM), which makes it highly responsive to changes in wind speed. Its compact size allows for easy integration into our anemometer design without adding unnecessary weight or bulk. Additionally, its low operating voltage (3VDC) ensures efficient power use while still generating a measurable voltage output for wind speed calculations.
 
-### OLED
+### OLED (Edited:2/7/2025)
 
 Solution    | Image | Pros   | Cons  | Datasheet
 ------------|-------|--------|-------|----------
@@ -35,5 +35,6 @@ COM-13999 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/imag
 TDCR1050M | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/1123/TDCG1060M.JPG) | - Four-digit display <br> - Compact design <br> - Low forward voltage | - Smaller digit size <br> - Red illumination <br> - Common anode configuration | [Datasheet](https://www.vishay.com/docs/83180/tdcx10x0m.pdf)
 
 __Selection:__ I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.
+2/7/2025
 
 [Back to Home](index.md)
