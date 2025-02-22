@@ -18,7 +18,7 @@
         <link rel="prev" href="../Block-Diagram/">
       
       
-        <link rel="next" href="../charts/">
+        <link rel="next" href="../Schematic/">
       
       
       <link rel="icon" href="../static/logo.png">
@@ -244,6 +244,23 @@
     
   
   Component Selection
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Schematic/" class="md-tabs__link">
+        
+  
+    
+  
+  Schematic
 
       </a>
     </li>
@@ -506,22 +523,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#microcontroller-selection-edited272025" class="md-nav__link">
-    Microcontroller Selection (Edited:2/7/2025)
+  <a href="#microcontroller-selection-last-edited272025" class="md-nav__link">
+    Microcontroller Selection (Last Edited:2/7/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anemometer-edited2202025" class="md-nav__link">
-    Anemometer (Edited:2/20/2025)
+  <a href="#anemometer-last-edited2202025" class="md-nav__link">
+    Anemometer (Last Edited:2/20/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oled-edited272025" class="md-nav__link">
-    OLED (Edited:2/7/2025)
+  <a href="#oled-last-edited272025" class="md-nav__link">
+    OLED (Last Edited:2/7/2025)
   </a>
   
 </li>
@@ -535,6 +552,25 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Schematic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Schematic
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -734,22 +770,22 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#microcontroller-selection-edited272025" class="md-nav__link">
-    Microcontroller Selection (Edited:2/7/2025)
+  <a href="#microcontroller-selection-last-edited272025" class="md-nav__link">
+    Microcontroller Selection (Last Edited:2/7/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anemometer-edited2202025" class="md-nav__link">
-    Anemometer (Edited:2/20/2025)
+  <a href="#anemometer-last-edited2202025" class="md-nav__link">
+    Anemometer (Last Edited:2/20/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oled-edited272025" class="md-nav__link">
-    OLED (Edited:2/7/2025)
+  <a href="#oled-last-edited272025" class="md-nav__link">
+    OLED (Last Edited:2/7/2025)
   </a>
   
 </li>
@@ -786,7 +822,7 @@
 <p>This page documents my component selection process, including the options considered for each major subsystem and the reasoning behind my choices for supporting hardware. Due to project requirements, only surface-mount components will be considered.</p>
 <h2 id="subsystem-functionality">Subsystem Functionality</h2>
 <p>My role in our team's simulated wind tunnel project is to manage the airspeed display. The system includes a small airplane on a pivot with streamers to visualize airflow, along with a 7-segment display that indicates wind speed. The wind speed values are controlled by an operator using dials. To ensure seamless communication between subsystems, our team has chosen to use UART, forwarding messages with headers to identify their sources. Since response time is not critical, this approach should work as long as each microcontroller has enough data storage to queue and transmit the necessary information.</p>
-<h3 id="microcontroller-selection-edited272025">Microcontroller Selection (Edited:2/7/2025)</h3>
+<h3 id="microcontroller-selection-last-edited272025">Microcontroller Selection (<strong>Last Edited</strong>:2/7/2025)</h3>
 <table>
 <thead>
 <tr>
@@ -822,7 +858,7 @@
 </tbody>
 </table>
 <p><strong>Selection:</strong> I chose the PIC18F47Q10 (TQFP/44) for my airspeed display because its successful integration with other systems will largely determine the projects scope. The availability of both provided and sourced information will be crucial to the final system's functionality. Additionaly, using the same microcontroller as other students provides access to broader knowledge base, and the labs leading up to the final project will help refine my skills with this specific controller.</p>
-<h3 id="anemometer-edited2202025">Anemometer (Edited:2/20/2025)</h3>
+<h3 id="anemometer-last-edited2202025">Anemometer (<strong>Last Edited</strong>:2/20/2025)</h3>
 <p><strong>Explanation</strong>: Our team plans to build a custom anemometer for our project, designed to measure the speed of the fan in our wind tunnel. The component selection will include a motor which is needed for the anemometer, because we want the motor to be spinning from our provided wind speed so we can read the input and convert the motor readings to wind speed as the output.</p>
 <table>
 <thead>
@@ -859,7 +895,7 @@
 </tbody>
 </table>
 <p><strong>Selection</strong>: The Vybronics VQ4TL2BQ380001 motor was chosen because of its high RPM (24,927 RPM), which makes it highly responsive to changes in wind speed. Its compact size allows for easy integration into our anemometer design without adding unnecessary weight or bulk. Additionally, its low operating voltage (3VDC) ensures efficient power use while still generating a measurable voltage output for wind speed calculations.</p>
-<h3 id="oled-edited272025">OLED (Edited:2/7/2025)</h3>
+<h3 id="oled-last-edited272025">OLED (<strong>Last Edited</strong>:2/7/2025)</h3>
 <table>
 <thead>
 <tr>
@@ -894,8 +930,8 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Selection:</strong> I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.
-2/7/2025</p>
+<p><strong>Selection:</strong> I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.</p>
+<p><strong>Made</strong>:2/7/2025</p>
 <p><a href="../">Back to Home</a></p>
 
 
@@ -941,13 +977,13 @@
         
         
           
-          <a href="../charts/" class="md-footer__link md-footer__link--next" aria-label="Next: Charts" rel="next">
+          <a href="../Schematic/" class="md-footer__link md-footer__link--next" aria-label="Next: Schematic" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Charts
+                Schematic
               </div>
             </div>
             <div class="md-footer__button md-icon">
