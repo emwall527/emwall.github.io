@@ -12,3 +12,5 @@ Individual Assignments
 [Block Diagram](Block-Diagram.md)
 
 [Component Selection](Component-Selection.md)
+
+[Schematic](Schematic.md)
