@@ -36,6 +36,6 @@ TDCR1050M | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/imag
 
 __Selection:__ I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.
 
-__Made__:2/7/2025
+__Made__: 2/7/2025
 
 [Back to Home](index.md)
