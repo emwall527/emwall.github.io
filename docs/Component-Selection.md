@@ -8,7 +8,7 @@ My role in our team's simulated wind tunnel project is to manage the airspeed di
 ### Microcontroller Selection (__Last Edited__:2/7/2025)
 Solution    | Image | Pros   | Cons  | Datasheet
 ------------|-------|--------|-------|----------
-__PIC18F47Q10 TQFP/44__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4564/150%7EC04-076%7EPT%7E44.JPG) |- High Memory <br> - Rich Peripherals <br> - Hardware CLC | - Higher Power Consumption <br> - More Expensive <br> - More Complex to Program | [Datasheet](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47Q10-I-PT/10187786)
+__PIC18F47Q10 TQFP/44__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4564/150%7EC04-076%7EPT%7E44.JPG) |- High Memory <br> - Rich Peripherals <br> - Hardware CLC | - Higher Power Consumption <br> - More Expensive <br> - More Complex to Program | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf)
 MC9S08PA32AVLCR | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/568%7ESOT358-3%7EAC%2CFA%2CFJ%2CLC%2CPB%7E32.jpg) | - Efficient 8-bit Performance <br> - Integrated Peripherials <br> - Lower Cost | - Limited Memory <br> - Slower Processing <br> - Limited Community Support | [Datasheet](https://www.nxp.com/docs/en/data-sheet/MC9S08PA60_Rev1.pdf)
 ATTINY202-SSFR | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4818/150%3B-8S1%3B-%3B-8.jpg) | - Ultra Low Power <br> - Compact Package <br> - Simple Programming | - Limited Memory <br> - Minimal Peripherals <br> - Lower Processing | [Datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-402-AVR-MCU-with-Core-Independent-Peripherals_and-picoPower-40001969A.pdf)
 
@@ -20,7 +20,7 @@ __Explanation__: Our team plans to build a custom anemometer for our project, de
 
 Solution    | Image | Pros   | Cons  | Datasheet
 ------------|-------|--------|-------|----------
-VQ4TL2BQ380001 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2543/MFG_Q4_MICRO-MOTOR.jpg) | - High RPM <br> - Compact size <br> - Low voltage operation | - Low torque <br> - No built-in gearing <br> - High RPM (Might require more circuitry to handle) | [Datasheet](https://www.vybronics.com/dc-micro-drive-motors/v-q4tl2bq380001)
+__VQ4TL2BQ380001__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2543/MFG_Q4_MICRO-MOTOR.jpg) | - High RPM <br> - Compact size <br> - Low voltage operation | - Low torque <br> - No built-in gearing <br> - High RPM (Might require more circuitry to handle) | [Datasheet](https://www.vybronics.com/dc-micro-drive-motors/v-q4tl2bq380001)
 ROB-11696 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/1794/MFG_ROB-11696.jpg) | - Moderate RPM <br> - Reliable performance <br> - Suitable for general applications | - May require higher wind speeds <br> - Higher voltage <br> - Slightly larger | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/951/ROB-11696_Web.pdf)
 FIT0564 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/3167/FIT0564.jpg) | - Built-in gearbox increases torque <br> - Lower no-load RPM <br> - Can handle a wider range of applications | - May not see changes in wind speed <br> - Larger size compared to other motors <br> - Requires more power | [Datasheet](https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/778/FIT0564_Web.pdf)
 

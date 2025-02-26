@@ -14,3 +14,5 @@ Individual Assignments
 [Component Selection](Component-Selection.md)
 
 [Schematic](Schematic.md)
+
+[BOM/Power Budget](BOM-&-Power-Budget.md)
