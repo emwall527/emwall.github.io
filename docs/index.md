@@ -5,6 +5,10 @@ tags:
 - tag2
 ---
 
+Team Stuff
+---
+[Team Website](https://recpal.github.io/Group304EGR314.github.io/)
+
 Hello Welcome to my page! My work will be updated periodically as I complete it below.
 
 Individual Assignments

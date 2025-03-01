@@ -15,3 +15,5 @@ To ensure sufficient power delivery for all required hardware, I have generated 
 ![Power Budget](https://raw.githubusercontent.com/emwall527/emwall.github.io/refs/heads/main/Pictures/Power%20Budget%20for%20Subsystem.jpg)
 
 __Made__: 2/25/2025
+
+[Back to Home](index.md)
