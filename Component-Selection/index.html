@@ -471,6 +471,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#led-driver-last-edited-382025" class="md-nav__link">
+    LED Driver (Last Edited: 3/8/2025)
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -554,6 +561,13 @@
           <li class="md-nav__item">
   <a href="#oled-last-edited-272025" class="md-nav__link">
     OLED (Last Edited: 2/7/2025)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#led-driver-last-edited-382025" class="md-nav__link">
+    LED Driver (Last Edited: 3/8/2025)
   </a>
   
 </li>
@@ -698,7 +712,43 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Selection:</strong> I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.</p>
+<p><strong>Selection</strong>: I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.</p>
+<h3 id="led-driver-last-edited-382025">LED Driver (<strong>Last Edited</strong>: 3/8/2025)</h3>
+<table>
+<thead>
+<tr>
+<th>Solution</th>
+<th>Image</th>
+<th>Pros</th>
+<th>Cons</th>
+<th>Datasheet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AS1115-BSST</strong></td>
+<td><a class="glightbox" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/382/AS1116-BSST.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/382/AS1116-BSST.jpg" /></a></td>
+<td>- Supports up to 8 digits <br> - Operates at 3.3V <br> - Simple I²C interface</td>
+<td>- Limited expandability beyond 8 digits <br> - Only supports I²C, no SPI option <br> - May require external resistors for LED current control</td>
+<td><a href="https://look.ams-osram.com/m/7ed04145f58f44e2/original/AS1115-DS000206%20Datasheet">Datasheet</a></td>
+</tr>
+<tr>
+<td>MAX6958AAEE+T</td>
+<td><a class="glightbox" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/5350/175%7E21-0055%7EEE%7E16.JPG" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/5350/175%7E21-0055%7EEE%7E16.JPG" /></a></td>
+<td>- Operates at 3.3V <br> - I²C-compatible <br> - Compact 16-QSOP package</td>
+<td>- Only supports up to 4 digits <br> - Limited segment outputs <br> - Less community support</td>
+<td><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/max6958-max6959.pdf">Datasheet</a></td>
+</tr>
+<tr>
+<td>MAX6955AAX+</td>
+<td><a class="glightbox" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/175%7E21-0040%7EAX%7E36.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/175%7E21-0040%7EAX%7E36.jpg" /></a></td>
+<td>- Supports up to 16 digits <br> - 3.3V compatible <br> - I²C interface</td>
+<td>- Larger 36-SSOP package <br> - More complex setup for basic needs <br> - Higher power consumption</td>
+<td><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/MAX6955.pdf">Datasheet</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Selection</strong>: I chose the AS1115-BSST for my LED driver because it supports up to 8 digits, which meets my requirement of driving 4-5 XDCBD14A 7-segment displays. It operates at 3.3V, ensuring compatibility with my PIC18F47K40 microcontroller without additional voltage level shifting. The I²C interface simplifies communication, reducing the number of required microcontroller pins while maintaining efficient data transfer. Additionally, its compact design and built-in scanning capabilities make it an ideal choice for displaying real-time airspeed values from the anemometer in my wind tunnel project.</p>
 <p><strong>Made</strong>: 2/7/2025</p>
 <p><a href="../">Back to Home</a></p>
 
