@@ -34,7 +34,17 @@ __XDCBD14A__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/i
 COM-13999 | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/2173/MFG_COM-13999.jpg) | - RGB capability <br> - Dual-digit design <br> - Standard 14-DIP | - Higher Power consumption <br> - More complex control circuitry <br> - Slightly larger footprint | [Datasheet](https://cdn.sparkfun.com/datasheets/Components/LED/ACD8143.pdf)
 TDCR1050M | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/1123/TDCG1060M.JPG) | - Four-digit display <br> - Compact design <br> - Low forward voltage | - Smaller digit size <br> - Red illumination <br> - Common anode configuration | [Datasheet](https://www.vishay.com/docs/83180/tdcx10x0m.pdf)
 
-__Selection:__ I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.
+__Selection__: I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.
+
+### LED Driver (__Last Edited__: 3/8/2025)
+
+Solution    | Image | Pros   | Cons  | Datasheet
+------------|-------|--------|-------|----------
+__AS1115-BSST__ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/382/AS1116-BSST.jpg) | - Supports up to 8 digits <br> - Operates at 3.3V <br> - Simple I²C interface | - Limited expandability beyond 8 digits <br> - Only supports I²C, no SPI option <br> - May require external resistors for LED current control | [Datasheet](https://look.ams-osram.com/m/7ed04145f58f44e2/original/AS1115-DS000206%20Datasheet)
+MAX6958AAEE+T | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/5350/175%7E21-0055%7EEE%7E16.JPG) | - Operates at 3.3V <br> - I²C-compatible <br> - Compact 16-QSOP package | - Only supports up to 4 digits <br> - Limited segment outputs <br> - Less community support | [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/max6958-max6959.pdf)
+MAX6955AAX+ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/175%7E21-0040%7EAX%7E36.jpg) | - Supports up to 16 digits <br> - 3.3V compatible <br> - I²C interface | - Larger 36-SSOP package <br> - More complex setup for basic needs <br> - Higher power consumption | [Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/MAX6955.pdf)
+
+__Selection__: I chose the AS1115-BSST for my LED driver because it supports up to 8 digits, which meets my requirement of driving 4-5 XDCBD14A 7-segment displays. It operates at 3.3V, ensuring compatibility with my PIC18F47K40 microcontroller without additional voltage level shifting. The I²C interface simplifies communication, reducing the number of required microcontroller pins while maintaining efficient data transfer. Additionally, its compact design and built-in scanning capabilities make it an ideal choice for displaying real-time airspeed values from the anemometer in my wind tunnel project.
 
 __Made__: 2/7/2025
 
