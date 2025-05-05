@@ -294,7 +294,24 @@
   
     
   
-  Schematic
+  Schematic and PCB
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../pic-table/" class="md-tabs__link">
+        
+  
+    
+  
+  PIC Table
 
       </a>
     </li>
@@ -487,29 +504,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#microcontroller-selection-last-edited-272025" class="md-nav__link">
-    Microcontroller Selection (Last Edited: 2/7/2025)
+  <a href="#microcontroller-selection-last-edited-552025" class="md-nav__link">
+    Microcontroller Selection (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anemometer-last-edited-2202025" class="md-nav__link">
-    Anemometer (Last Edited: 2/20/2025)
+  <a href="#anemometer-last-edited-552025" class="md-nav__link">
+    Anemometer (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oled-last-edited-272025" class="md-nav__link">
-    OLED (Last Edited: 2/7/2025)
+  <a href="#oled-last-edited-552025" class="md-nav__link">
+    OLED (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#led-driver-last-edited-382025" class="md-nav__link">
-    LED Driver (Last Edited: 3/8/2025)
+  <a href="#led-driver-last-edited-552025" class="md-nav__link">
+    LED Driver (Last Edited: 5/5/2025)
   </a>
   
 </li>
@@ -537,7 +554,26 @@
         
   
   <span class="md-ellipsis">
-    Schematic
+    Schematic and PCB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pic-table/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PIC Table
   </span>
   
 
@@ -581,29 +617,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#microcontroller-selection-last-edited-272025" class="md-nav__link">
-    Microcontroller Selection (Last Edited: 2/7/2025)
+  <a href="#microcontroller-selection-last-edited-552025" class="md-nav__link">
+    Microcontroller Selection (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#anemometer-last-edited-2202025" class="md-nav__link">
-    Anemometer (Last Edited: 2/20/2025)
+  <a href="#anemometer-last-edited-552025" class="md-nav__link">
+    Anemometer (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#oled-last-edited-272025" class="md-nav__link">
-    OLED (Last Edited: 2/7/2025)
+  <a href="#oled-last-edited-552025" class="md-nav__link">
+    OLED (Last Edited: 5/5/2025)
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#led-driver-last-edited-382025" class="md-nav__link">
-    LED Driver (Last Edited: 3/8/2025)
+  <a href="#led-driver-last-edited-552025" class="md-nav__link">
+    LED Driver (Last Edited: 5/5/2025)
   </a>
   
 </li>
@@ -640,7 +676,7 @@
 <p>This page documents my component selection process, including the options considered for each major subsystem and the reasoning behind my choices for supporting hardware. Due to project requirements, only surface-mount components will be considered.</p>
 <h2 id="subsystem-functionality">Subsystem Functionality</h2>
 <p>My role in our team's simulated wind tunnel project is to manage the airspeed display. The system includes a small airplane on a pivot with streamers to visualize airflow, along with a 7-segment display that indicates wind speed. The wind speed values are controlled by an operator using dials. To ensure seamless communication between subsystems, our team has chosen to use UART, forwarding messages with headers to identify their sources. Since response time is not critical, this approach should work as long as each microcontroller has enough data storage to queue and transmit the necessary information.</p>
-<h3 id="microcontroller-selection-last-edited-272025">Microcontroller Selection (<strong>Last Edited</strong>: 2/7/2025)</h3>
+<h3 id="microcontroller-selection-last-edited-552025">Microcontroller Selection (<strong>Last Edited</strong>: 5/5/2025)</h3>
 <table>
 <thead>
 <tr>
@@ -649,6 +685,7 @@
 <th>Pros</th>
 <th>Cons</th>
 <th>Datasheet</th>
+<th>Price</th>
 </tr>
 </thead>
 <tbody>
@@ -658,13 +695,15 @@
 <td>- High Memory <br> - Rich Peripherals <br> - Hardware CLC</td>
 <td>- Higher Power Consumption <br> - More Expensive <br> - More Complex to Program</td>
 <td><a href="https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf">Datasheet</a></td>
+<td>$1.64</td>
 </tr>
 <tr>
 <td>MC9S08PA32AVLCR</td>
 <td><a class="glightbox" href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/568%7ESOT358-3%7EAC%2CFA%2CFJ%2CLC%2CPB%7E32.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Image" src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/6347/568%7ESOT358-3%7EAC%2CFA%2CFJ%2CLC%2CPB%7E32.jpg" /></a></td>
-<td>- Efficient 8-bit Performance <br> - Integrated Peripherials <br> - Lower Cost</td>
+<td>- Efficient 8-bit Performance <br> - Integrated Peripherals <br> - Lower Cost</td>
 <td>- Limited Memory <br> - Slower Processing <br> - Limited Community Support</td>
 <td><a href="https://www.nxp.com/docs/en/data-sheet/MC9S08PA60_Rev1.pdf">Datasheet</a></td>
+<td>$2.86</td>
 </tr>
 <tr>
 <td>ATTINY202-SSFR</td>
@@ -672,11 +711,13 @@
 <td>- Ultra Low Power <br> - Compact Package <br> - Simple Programming</td>
 <td>- Limited Memory <br> - Minimal Peripherals <br> - Lower Processing</td>
 <td><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-402-AVR-MCU-with-Core-Independent-Peripherals_and-picoPower-40001969A.pdf">Datasheet</a></td>
+<td>$0.50</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Selection:</strong> I chose the PIC18F47Q10 (TQFP/44) for my airspeed display because its successful integration with other systems will largely determine the projects scope. The availability of both provided and sourced information will be crucial to the final system's functionality. Additionaly, using the same microcontroller as other students provides access to broader knowledge base, and the labs leading up to the final project will help refine my skills with this specific controller.</p>
-<h3 id="anemometer-last-edited-2202025">Anemometer (<strong>Last Edited</strong>: 2/20/2025)</h3>
+<p><strong>Selection</strong>: I chose the PIC18F47Q10 (TQFP/44) for my airspeed display because its successful integration with other systems will largely determine the project's scope. The availability of both provided and sourced information will be crucial to the final system's functionality. Additionally, using the same microcontroller as other students provides access to a broader knowledge base, and the labs leading up to the final project will help refine my skills with this specific controller.</p>
+<hr />
+<h3 id="anemometer-last-edited-552025">Anemometer (<strong>Last Edited</strong>: 5/5/2025)</h3>
 <p><strong>Explanation</strong>: Our team plans to build a custom anemometer for our project, designed to measure the speed of the fan in our wind tunnel. The component selection will include a motor which is needed for the anemometer, because we want the motor to be spinning from our provided wind speed so we can read the input and convert the motor readings to wind speed as the output.</p>
 <table>
 <thead>
@@ -686,6 +727,7 @@
 <th>Pros</th>
 <th>Cons</th>
 <th>Datasheet</th>
+<th>Price</th>
 </tr>
 </thead>
 <tbody>
@@ -695,6 +737,7 @@
 <td>- High RPM <br> - Compact size <br> - Low voltage operation</td>
 <td>- Low torque <br> - No built-in gearing <br> - High RPM (Might require more circuitry to handle)</td>
 <td><a href="https://www.vybronics.com/dc-micro-drive-motors/v-q4tl2bq380001">Datasheet</a></td>
+<td>$4.04</td>
 </tr>
 <tr>
 <td>ROB-11696</td>
@@ -702,6 +745,7 @@
 <td>- Moderate RPM <br> - Reliable performance <br> - Suitable for general applications</td>
 <td>- May require higher wind speeds <br> - Higher voltage <br> - Slightly larger</td>
 <td><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/951/ROB-11696_Web.pdf">Datasheet</a></td>
+<td>$2.76</td>
 </tr>
 <tr>
 <td>FIT0564</td>
@@ -709,11 +753,13 @@
 <td>- Built-in gearbox increases torque <br> - Lower no-load RPM <br> - Can handle a wider range of applications</td>
 <td>- May not see changes in wind speed <br> - Larger size compared to other motors <br> - Requires more power</td>
 <td><a href="https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/778/FIT0564_Web.pdf">Datasheet</a></td>
+<td>$9.90</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Selection</strong>: The Vybronics VQ4TL2BQ380001 motor was chosen because of its high RPM (24,927 RPM), which makes it highly responsive to changes in wind speed. Its compact size allows for easy integration into our anemometer design without adding unnecessary weight or bulk. Additionally, its low operating voltage (3VDC) ensures efficient power use while still generating a measurable voltage output for wind speed calculations.</p>
-<h3 id="oled-last-edited-272025">OLED (<strong>Last Edited</strong>: 2/7/2025)</h3>
+<hr />
+<h3 id="oled-last-edited-552025">OLED (<strong>Last Edited</strong>: 5/5/2025)</h3>
 <table>
 <thead>
 <tr>
@@ -722,6 +768,7 @@
 <th>Pros</th>
 <th>Cons</th>
 <th>Datasheet</th>
+<th>Price</th>
 </tr>
 </thead>
 <tbody>
@@ -731,6 +778,7 @@
 <td>- Bright Illumination <br> - Standard 10-DIP <br> - Moderate Power Consumption</td>
 <td>- Single-digit Display <br> - Common anode configuration may not be compatible with all driver circuits <br> - Limited viewing angle</td>
 <td><a href="https://www.sunledusa.com/products/spec/XDCBD14A.pdf">Datasheet</a></td>
+<td>$2.97</td>
 </tr>
 <tr>
 <td>COM-13999</td>
@@ -738,6 +786,7 @@
 <td>- RGB capability <br> - Dual-digit design <br> - Standard 14-DIP</td>
 <td>- Higher Power consumption <br> - More complex control circuitry <br> - Slightly larger footprint</td>
 <td><a href="https://cdn.sparkfun.com/datasheets/Components/LED/ACD8143.pdf">Datasheet</a></td>
+<td>$4.68</td>
 </tr>
 <tr>
 <td>TDCR1050M</td>
@@ -745,11 +794,13 @@
 <td>- Four-digit display <br> - Compact design <br> - Low forward voltage</td>
 <td>- Smaller digit size <br> - Red illumination <br> - Common anode configuration</td>
 <td><a href="https://www.vishay.com/docs/83180/tdcx10x0m.pdf">Datasheet</a></td>
+<td>$3.34</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Selection</strong>: I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readablitiy and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.</p>
-<h3 id="led-driver-last-edited-382025">LED Driver (<strong>Last Edited</strong>: 3/8/2025)</h3>
+<p><strong>Selection</strong>: I chose the XDCBD14A for my airspeed display because its blue LED segments provide high visibility, ensuring that airspeed values are easy to read in various lighting conditions. The 0.56" digit size offers a good balance between readability and compactness, making it a suitable choice for my system. Additionally, the common anode configuration allows for flexible interfacing with standard driver circuits.</p>
+<hr />
+<h3 id="led-driver-last-edited-552025">LED Driver (<strong>Last Edited</strong>: 5/5/2025)</h3>
 <table>
 <thead>
 <tr>
@@ -758,6 +809,7 @@
 <th>Pros</th>
 <th>Cons</th>
 <th>Datasheet</th>
+<th>Price</th>
 </tr>
 </thead>
 <tbody>
@@ -767,6 +819,7 @@
 <td>- Supports up to 8 digits <br> - Operates at 3.3V <br> - Simple I²C interface</td>
 <td>- Limited expandability beyond 8 digits <br> - Only supports I²C, no SPI option <br> - May require external resistors for LED current control</td>
 <td><a href="https://look.ams-osram.com/m/7ed04145f58f44e2/original/AS1115-DS000206%20Datasheet">Datasheet</a></td>
+<td>$4.21</td>
 </tr>
 <tr>
 <td>MAX6958AAEE+T</td>
@@ -774,6 +827,7 @@
 <td>- Operates at 3.3V <br> - I²C-compatible <br> - Compact 16-QSOP package</td>
 <td>- Only supports up to 4 digits <br> - Limited segment outputs <br> - Less community support</td>
 <td><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/max6958-max6959.pdf">Datasheet</a></td>
+<td>$13.77</td>
 </tr>
 <tr>
 <td>MAX6955AAX+</td>
@@ -781,10 +835,11 @@
 <td>- Supports up to 16 digits <br> - 3.3V compatible <br> - I²C interface</td>
 <td>- Larger 36-SSOP package <br> - More complex setup for basic needs <br> - Higher power consumption</td>
 <td><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/MAX6955.pdf">Datasheet</a></td>
+<td>$31.18</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Selection</strong>: I chose the AS1115-BSST for my LED driver because it supports up to 8 digits, which meets my requirement of driving 4-5 XDCBD14A 7-segment displays. It operates at 3.3V, ensuring compatibility with my PIC18F47K40 microcontroller without additional voltage level shifting. The I²C interface simplifies communication, reducing the number of required microcontroller pins while maintaining efficient data transfer. Additionally, its compact design and built-in scanning capabilities make it an ideal choice for displaying real-time airspeed values from the anemometer in my wind tunnel project.</p>
+<p><strong>Selection</strong>: I chose the AS1115-BSST for my LED driver because it supports up to 8 digits, which meets my requirement of driving 4–5 XDCBD14A 7-segment displays. It operates at 3.3V, ensuring compatibility with my PIC18F47K40 microcontroller without additional voltage level shifting. The I²C interface simplifies communication, reducing the number of required microcontroller pins while maintaining efficient data transfer. Additionally, its compact design and built-in scanning capabilities make it an ideal choice for displaying real-time airspeed values from the anemometer in my wind tunnel project.</p>
 <p><strong>Made</strong>: 2/7/2025</p>
 <p><a href="../">Back to Home</a></p>
 
@@ -831,13 +886,13 @@
         
         
           
-          <a href="../Schematic/" class="md-footer__link md-footer__link--next" aria-label="Next: Schematic" rel="next">
+          <a href="../Schematic/" class="md-footer__link md-footer__link--next" aria-label="Next: Schematic and PCB" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Schematic
+                Schematic and PCB
               </div>
             </div>
             <div class="md-footer__button md-icon">
