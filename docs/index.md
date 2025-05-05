@@ -22,3 +22,5 @@ Individual Assignments
 [BOM/Power Budget](BOM-&-Power-Budget.md)
 
 [API](API.md)
+
+[Pic Table](pic-table.md)
