@@ -289,6 +289,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../Final-Report/" class="md-tabs__link">
+        
+  
+    
+  
+  Final Report
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../Schematic/" class="md-tabs__link">
         
   
@@ -488,6 +505,19 @@
     Diagram (Last Edited: 2/25/2025)
   </a>
   
+    <nav class="md-nav" aria-label="Diagram (Last Edited: 2/25/2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-meets-product-requirement-made-552025" class="md-nav__link">
+    How it Meets Product Requirement (Made: 5/5/2025)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -509,6 +539,25 @@
   
   <span class="md-ellipsis">
     Component Selection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Final-Report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Final Report
   </span>
   
 
@@ -593,6 +642,19 @@
     Diagram (Last Edited: 2/25/2025)
   </a>
   
+    <nav class="md-nav" aria-label="Diagram (Last Edited: 2/25/2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-meets-product-requirement-made-552025" class="md-nav__link">
+    How it Meets Product Requirement (Made: 5/5/2025)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -623,6 +685,9 @@
 <p>Below is the block diagram for my individual subsystem,this subsytem recieves the signal for changing the wind speed and indicating what the wind speed is at.</p>
 <h2 id="diagram-last-edited-2252025">Diagram (<strong>Last Edited</strong>: 2/25/2025)</h2>
 <p><a class="glightbox" href="https://raw.githubusercontent.com/emwall527/emwall.github.io/refs/heads/main/Pictures/New%20Block%20Diagram.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Block Diagram" src="https://raw.githubusercontent.com/emwall527/emwall.github.io/refs/heads/main/Pictures/New%20Block%20Diagram.png" /></a></p>
+<h3 id="how-it-meets-product-requirement-made-552025">How it Meets Product Requirement (<strong>Made</strong>: 5/5/2025)</h3>
+<p>The block diagram was designed to meet the product requirements of reading and displaying fan speed, updating the display in real-time, and reporting the data to the input device board. The system is powered by a 12V power supply, which is regulated to 3.3V for the microcontroller and other components. The PIC18F47Q10 microcontroller receives fan speed data from the anemometer, decodes it, and sends it to the LED Driver via I2C. The LED Driver then controls the 7-segment display to show the fan speed.</p>
+<p>Real-time data is processed by the microcontroller, which communicates with the LED Driver to update the display immediately. The 3.3V switching regulator ensures proper voltage levels for all components. This design efficiently handles the reading, decoding, and displaying of fan speed while maintaining simple communication between the microcontroller, anemometer, and display system. The MPLAB SNAP interface is included for easy programming and debugging.</p>
 <p><strong>Made</strong>: 1/31/2025</p>
 <p><a href="../">Back to Home</a></p>
 
