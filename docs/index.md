@@ -23,4 +23,6 @@ Individual Assignments
 
 [API](API.md)
 
+[Final Report](Final-Report.md)
+
 [Pic Table](pic-table.md)

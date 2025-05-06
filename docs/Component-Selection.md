@@ -53,6 +53,15 @@ MAX6955AAX+ | ![Image](https://mm.digikey.com/Volume0/opasdata/d220001/medias/im
 
 __Selection__: I chose the AS1115-BSST for my LED driver because it supports up to 8 digits, which meets my requirement of driving 4–5 XDCBD14A 7-segment displays. It operates at 3.3V, ensuring compatibility with my PIC18F47K40 microcontroller without additional voltage level shifting. The I²C interface simplifies communication, reducing the number of required microcontroller pins while maintaining efficient data transfer. Additionally, its compact design and built-in scanning capabilities make it an ideal choice for displaying real-time airspeed values from the anemometer in my wind tunnel project.
 
+### Major Components Summary Table (__Last Edited__: 5/5/2025)
+
+| Component                | Description                          | Part Number                   | Price  | Datasheet                                      |
+|--------------------------|--------------------------------------|-------------------------------|--------|------------------------------------------------|
+| **Microcontroller**       | Central control for the system       | **PIC18F47Q10 TQFP/44**        | $1.64  | [Datasheet](https://ww1.microchip.com/downloads/en/DeviceDoc/PIC18F27-47Q10-Data-Sheet-40002043E.pdf) |
+| **Anemometer Motor**      | Measures fan speed                   | **VQ4TL2BQ380001**             | $4.04  | [Datasheet](https://www.vybronics.com/dc-micro-drive-motors/v-q4tl2bq380001) |
+| **7-Segment Display**     | Display airspeed readings            | **XDCBD14A**                   | $2.97  | [Datasheet](https://www.sunledusa.com/products/spec/XDCBD14A.pdf) |
+| **LED Driver**            | Drives the 7-segment display         | **AS1115-BSST**                | $4.21  | [Datasheet](https://look.ams-osram.com/m/7ed04145f58f44e2/original/AS1115-DS000206%20Datasheet) |
+
 
 __Made__: 2/7/2025
 

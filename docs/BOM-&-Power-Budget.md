@@ -14,6 +14,11 @@ To ensure sufficient power delivery for all required hardware, I have generated 
 
 ![Power Budget](https://raw.githubusercontent.com/emwall527/emwall.github.io/refs/heads/main/Pictures/Power%20Budget%20for%20Subsystem.jpg)
 
+### How the Power Budget was used
+The Power Budget table helps estimate the system’s power needs by detailing the minimum and maximum power consumption for each component. The PIC18F47Q10 microcontroller draws 10mA in active mode, serving as the central control unit. The Vybronics DC Motor draws 0mA when inactive and up to 60mA when running, making it the largest power consumer. The SunLED XDCBD14A display uses 0mA when off and 20mA when on. The total minimum power draw is 10mA, and the maximum draw is 90mA, which occurs when the motor is at full speed and the display is on. These values confirm that the system requires a 3.3V supply capable of delivering at least 100mA, with sufficient headroom for safe operation. The system is power-efficient, with the motor being the primary power consumer, and careful management can further reduce power use.
+
+
+
 __Made__: 2/25/2025
 
 [Back to Home](index.md)
